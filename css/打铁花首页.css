@@ -1,0 +1,362 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #fff1d2;
+}
+/* 导航栏 */
+.title{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 144, 17);
+    padding: 10px 0;
+}
+.title a{
+    color: #000;
+    text-emphasis: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.title a:hover{
+    color: #fff;
+    background-color: #555;
+}
+/* 搜索 */
+.search{
+    position: relative;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+.search input{
+    position: relative;
+    top: 5px;
+    padding: 5px 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+.search button{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    padding: 6.5px 15px;
+    background-color: #b5b5b5;
+    color: white;
+    border: none;
+    border-radius: 0 19px 19px 0;
+    cursor: pointer;
+}
+.search button:before{
+    content: "搜索";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* 轮播图样式 */
+.banner{
+    width: 1260px;
+    height: 500px;
+    display: flex;
+    background-color: #bf2a2a;
+
+}
+.slider {
+    width: 1260px;
+    height: 500px;
+    overflow: hidden;
+
+}
+.slider img {
+    width: 1260px;
+    height: 500px;
+    /* object-fit: cover; */
+    top: 0;
+    left: 0;
+    /* opacity: 0; */
+    transition: opacity 1s ease-in-out;
+}
+.slider img.active {
+    opacity: 1;
+}
+
+/* 自动轮播控制 */
+/* .slider-controls {
+    width: 100px;
+    height: 500px;
+    background-color: #626262;
+    text-align: center;
+    padding: 50% 0;
+}
+
+.slider-controls button {
+    border: none;
+    color: #a6a6a6;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 40px;
+    background-color: #ffffff;
+} */
+/* 版心 */
+.container{
+    /* width: 1260px;
+    height: auto;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:  rgb(255, 153, 0); */
+}
+/* hr{
+    border-top:none;
+    border-left:none; 
+    border-right:none;
+    width: 260px;
+    background: #f3ef06;
+    height: 2px;
+    margin-bottom: 20px;
+} */
+/* .main{
+    background-color: #555;
+} */
+
+/* 简介 */
+.jianjie{
+    width: 900px;
+    /* background-color: #fff5d5;
+    border: 2px solid rgb(149, 135, 104);
+    border-radius: 50px; 
+    margin: 20px 10px 10px 10px; */
+}
+.bq a{
+    color: rgb(98, 98, 98);
+    text-decoration: none;
+}
+.bq a:hover{
+    color: #650000;
+}
+.jianjie_wenzhi{
+    width: 620px;
+    border-radius: 20px;
+    background-color: #eac057;
+    margin-left: 20px;
+}
+.jianjie_wenzhi p{
+    margin: 35px;
+    text-indent: 2em;
+}
+/* 起源 */
+.qiyuan{
+    width: 900px;
+    /* background-color: #fff5d5;
+    border: 2px solid rgb(149, 135, 104);
+    border-radius: 50px; 
+    margin: 10px; */
+}
+.qiyuan p{
+    margin-bottom: 20px;
+}
+.qiyuan img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+/* 作品 */
+.zuopin{
+    width: 900px;
+    /* background-color: #fff5d5;
+    border: 2px solid rgb(149, 135, 104);
+    border-radius: 50px; 
+    margin: 10px; */
+}
+.zuopin_nra{
+    width: 300px;
+    text-align: center;
+    /* background-color: #eac057; */
+}
+/* 传承人物 */
+.renwu{
+    width: 900px;
+    /* background-color: #fff5d5;
+    border: 2px solid rgb(149, 135, 104);
+    border-radius: 50px;    
+    margin: 10px; */
+}
+.renwu_nra{
+    width: 450px;
+    text-align: center;
+    margin: 20px;
+}
+.renwu_nra img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+.renwu_nra p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.renwu_nra span{
+    font-size: 20px;
+    color: #650000;
+}
+/* 表演流程 */
+.liucheng{
+    width: 900px;
+    height: 430px;
+    /* background-color: #fff5d5;
+    border: 2px solid rgb(149, 135, 104);
+    border-radius: 50px; 
+    margin: 10px 10px 20px 10px; */
+}
+.liucheng_nr_tp img{
+    width: 180px; 
+    border-radius: 50px;
+    margin: 17px;
+    transition: all 0.5s ease;
+}
+.za:hover img{
+    transform: scale(1.2);
+}
+.zb:hover img{
+    transform: scale(1.2);
+}
+.zc:hover img{
+    transform: scale(1.2);
+}
+.zd:hover img{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* .hh h1{
+    line-height:20px;
+    text-align: center;
+}
+.hh a{
+    color:rgb(98, 98, 98);
+    text-decoration: none;
+}
+.feiyi{
+    width: 1000px;
+    align-items: center;
+   
+    margin: 10px;
+}
+
+
+.f{
+    display: flex;
+
+}
+.ff{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffce89;
+    padding: 0 20px;
+    margin-left: 30px;
+}
+.toa{
+    width: 520px;
+    height: 100px;
+    margin: 0 60px;
+} 
+.kuang{
+    display: flex;
+    padding: 20px;
+}
+.kuang img{
+    width: 450px;
+    height: 200px;
+    margin: 20px;
+}
+.k{
+    width: 490px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #bf2a2a;
+}
+.k h3{
+    color: #fff;
+    margin: 20px;
+}
+.k p{
+    color: #fff;
+    margin: 20px;
+}
+.ka{
+    width: 490px;
+    text-align: center;
+    border: 2px solid red;
+}
+.qian{
+    width: 1000px;
+    display: flex;
+    margin: 20px;
+    border: 2px solid rgb(255, 153, 0)
+}
+.q{
+    margin: 20px 0;
+}
+.qian p{
+    width: 500px;
+    height: 50px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px 0 0 20px;
+    background-color: #6f6f6f;
+    margin-top: 60px;
+}
+.qian img{
+    width: 300px;   
+    height: 400px;
+}
+.chuang{
+    display:flex;
+}
+.chuang img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 20px 60px
+}
+ */
+
+
+
+
+
+
+
+/* 底部 */
+footer {
+    background-color: rgb(255, 153, 0);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+

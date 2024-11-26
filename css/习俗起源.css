@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #fff1d2;
+}
+/* 导航栏 */
+.title{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 153, 0);
+    padding: 10px 0;
+}
+.title a{
+    color: #000;
+    text-emphasis: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.title a:hover{
+    color: #fff;
+    background-color: #555;
+}
+/* 搜索 */
+.search{
+    position: relative;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+.search input{
+    position: relative;
+    top: 5px;
+    padding: 5px 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+.search button{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    padding: 6.5px 15px;
+    background-color: #b5b5b5;
+    color: white;
+    border: none;
+    border-radius: 0 19px 19px 0;
+    cursor: pointer;
+}
+.search button:before{
+    content: "搜索";
+    font-size: 12px;
+    color: #ffffff;
+}
+/* 轮播图 */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    /* display: flex;
+    justify-content: space-around; */
+    width: 1260px;
+    height: 500px;
+}
+/* 版心 */
+.container{
+    width: 1260px;
+    margin: 0 auto;
+    /* background-color:  rgb(255, 153, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#dt{
+    width: 1000px;
+    margin: 10px 20px;
+    /* background-color: rgb(101, 255, 59); */
+}
+h2{
+    color: rgb(138, 103, 57);
+    line-height:20px;
+    margin-left: 20px;
+}
+.to{
+    margin-left: 50px;
+    display: flex;
+}
+.ff p{
+    text-indent: 2em;
+    line-height: 24px;
+}
+#dt img{
+    width: 380px;
+    height: 400px;
+    margin: 0 30px;
+}
+.d{
+    width: 1000px;
+    /* align-items: center; */
+    margin: 10px 20px;
+    /* background-color: rgb(101, 255, 59); */
+}
+
+.t{
+    display: flex;
+    margin-left: 20px;
+}
+.ta{
+    width: 420px;
+    margin: 20px 15px;
+}
+.t img{
+    width: 280px;
+    height: 280px;
+}
+.ta p{
+    font-size: 18px;
+    width: 240px;
+    height: 24px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #d3a84b;
+}
+/* .ta span{
+    text-align: center;
+} */
+/* 底部 */
+footer {
+    background-color: rgb(255, 153, 0);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+

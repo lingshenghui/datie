@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: #fff1d2;
+}
+/* 导航栏 */
+.title{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 144, 17);
+    padding: 10px 0;
+}
+.title a{
+    color: #000;
+    text-emphasis: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.title a:hover{
+    color: #fff;
+    background-color: #555;
+}
+/* 搜索 */
+.search{
+    position: relative;
+}
+input,button{
+    border: none;
+    outline: none;
+}
+.search input{
+    position: relative;
+    top: 5px;
+    padding: 5px 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+.search button{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    padding: 6.5px 15px;
+    background-color: #b5b5b5;
+    color: white;
+    border: none;
+    border-radius: 0 19px 19px 0;
+    cursor: pointer;
+}
+.search button:before{
+    content: "搜索";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* 版心 */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 轮播图样式 */
+.banner{
+    width: 1260px;
+    height: 500px;
+    display: flex;
+    /* background-color: #bf2a2a; */
+
+}
+
+
+#rw{
+    width: 1000px;
+    margin: 10px 20px;
+    /* background-color: rgb(101, 255, 59); */
+}
+h2{
+    color: rgb(106, 106, 106);
+    line-height:10px;
+    margin-left: 20px;
+}
+/* 人物 */
+.renwu{
+    width: 850px;
+    display: flex;
+    /* border: 2px solid #dfa076;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px; */
+    /* background-color: #555; */
+}
+.renwu_tp p{
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    color: #ffff70;
+    /* border: 2px solid #c3c321; */
+    border-radius: 10px;
+    background-color: #831313;
+}
+.renwu_tp span{
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.renwu_tp img{
+    width: 350px;
+    border-radius: 10px;
+}
+.renwu_wz{
+    width: 480px;
+    /* background-color: #b75f5f; */
+}
+.renwu_wz h3{
+    color: #831313;
+    font-size: 28px;
+    font-family: 华文行楷, Helvetica, sans-serif;
+    margin: 50px 0 30px 30px;
+}
+.renwu_wz p{
+    margin: 30px;
+    line-height: 30px;
+}
+.renwu_wz h4{
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+    color: #ffff70;
+    background-color: #9c2e2e;
+}
+
+/* 底部 */
+footer {
+    background-color: rgb(255, 153, 0);
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+ 
+footer ul li a {
+    color: #000000;
+    text-decoration: none;
+}
