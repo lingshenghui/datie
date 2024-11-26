@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>价值意义</title>
     <link rel="stylesheet" href="./css/价值意义.css">
+    <link rel="stylesheet" href="./css/通用.css">
 </head>
+
 <body>
     <!-- 导航栏  -->
     <div class="title">
@@ -24,87 +27,215 @@
             </form>
         </div>
     </div>
-    
+
     <!-- 轮播图 -->
     <div class="banner">
-        <img src="./img/d8.jpg" alt="打铁花">
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&lt;</button>
+        </div>
+        <div class="slider">
+            <img src="./img/d1.jpg" alt="打铁花" class="active">
+            <img src="./img/d2.jpg" alt="打铁花">
+            <img src="./img/d3.jpg" alt="打铁花">
+            <img src="./img/d4.jpg" alt="打铁花">
+            <img src="./img/d5.jpg" alt="打铁花">
+        </div>
+        <div class="slider-controls">
+            <button onclick="nextSlide()">&gt;</button>
+        </div>
     </div>
     <div class="container">
-        <div class="zw">
-            <h2>价值意义</h2>
-            <div class="hy"></div>
-            <div class="big-container">
-                <div class="left-box">
-                    <video id="video1" controls width="500" height="500">
-                        <source src="./video/12.mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>传承价值</h3>
-                    <span>打铁花技艺历史悠久，表演气势磅礴，场面宏大。
-                        打花艺人在千余度的铁花中赤膊上阵而能进退自如，
-                        不被烫伤，现代烟花的灿烂夺目和传统绝技的神秘惊险交织在一起，
-                        令人叹为观止。打铁花涵容了道教文化、商贸习俗、民间工艺等内容，
-                        丰富了中华民族的民间艺术宝库，为活跃人民群众的文化生活、
-                        提高民族自豪感和增强民族凝聚力发挥着重要作用。</span>
-                </div>
-                <div class="right-box">
-                    <video id="video2" controls width="500" height="500">
-                        <source src="./video/13.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>符号价值</h3>
-                    <span>确山“打铁花”以在黑夜中绽放出如同烟花般的绚丽夺目的金黄色铁水。
-                        所指寓意方面，即确山“打铁花”取“铁花，铁花，铁定要发”和“打花，
-                        打花，越打越发”的美好寓意，借此来表达人们祈福禳灾，
-                        祈福求财的愿景。百姓通过“打铁花”祈盼来年风调雨顺、
-                        五谷丰登、国泰民安、富贵吉祥。据传，“打铁花”可趋鬼避邪，
-                        来观赏“打铁花”的人也可祛除身上的邪气。</span>
-                </div>               
+        <div id="valueContent">
+            <h2>打铁花的价值与意义</h2>
+
+            <!-- 价值概述 -->
+            <div class="value-overview"
+                style="text-align: center; margin: 30px 0; padding: 20px; background: rgba(234, 192, 87, 0.2); border-radius: 15px;">
+                <p style="font-size: 18px; line-height: 1.8;">
+                    打铁花作为国家级非物质文化遗产，不仅承载着深厚的文化内涵，更是中华民族智慧的结晶。它的价值体现在文化传承、艺术创新、社会发展等多个层面。</p>
             </div>
-            <div class="big-container">
-                <div class="left-box">
-                    <video id="video1" controls width="500" height="500">
-                        <source src="./video/14.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>艺术价值</h3>
-                    <span>“铁花”所呈现出来的颜色为金黄色，形状呈烟花似散落，
-                        给人强大的视觉盛宴。在当前，“打铁花”被越来越多的人所熟知，
-                        人们观赏并且赞美他所具备的艺术价值。</span>
+
+            <!-- 价值内容卡片式布局 -->
+            <div class="value-cards"
+                style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-top: 40px;">
+                <!-- 文化价值卡片 -->
+                <div class="value-card"
+                    style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <img src="./img/文化价值.jpg" alt="文化价值" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 15px;">文化价值</h3>
+                        <p style="line-height: 1.6; color: #666;">
+                            打铁花作为国家级非物质文化遗产，承载着深厚的文化内涵。它不仅展现了中国传统工艺的精湛技术，更反映了古代劳动人民的智慧与创造力。这门技艺融合了民间艺术、冶金技术和表演艺术，是中华传统文化的重要组成部分。
+                        </p>
+                    </div>
                 </div>
-                <div class="right-box">
-                    <video id="video2" controls width="500" height="500">
-                        <source src="./video/15.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>环保价值</h3>
-                    <span>“打铁花”所使用的铁水不同于火药，它不会对大自然产生空气污染，
-                        且同样具有烟花的效果。</span>
+
+                <!-- 社会价值卡片 -->
+                <div class="value-card"
+                    style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <img src="./img/社会价值.jpg" alt="社会价值" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 15px;">社会价值</h3>
+                        <p style="line-height: 1.6; color: #666;">
+                            打铁花表演不仅丰富了人民群众的精神文化生活，还促进了地方文化旅游的发展。在节日庆典和民俗活动中，打铁花表演成为凝聚人心、传承文化的重要载体。它为当地居民提供了就业机会，带动了相关产业的发展。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 艺术价值卡片 -->
+                <div class="value-card"
+                    style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <img src="./img/艺术价值.jpg" alt="艺术价值" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 15px;">艺术价值</h3>
+                        <p style="line-height: 1.6; color: #666;">
+                            打铁花是一门独特的表演艺术，它将工艺技术与艺术表现完美结合。表演时铁花飞溅，形成璀璨夺目的视觉效果，犹如火树银花，具有极高的观赏价值。这种艺术形式不仅展现了中国传统艺术的独特魅力，还通过不断创新，融入现代元素。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 教育价值卡片 -->
+                <div class="value-card"
+                    style="background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <img src="./img/教育价值.jpg" alt="教育价值" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="color: #333; margin-bottom: 15px;">教育价值</h3>
+                        <p style="line-height: 1.6; color: #666;">
+                            打铁花技艺的传承过程本身就是一个重要的教育过程。通过"师带徒"的传统教育方式，不仅传授了技艺，还传递了工匠精神和文化价值观。它让年轻一代了解传统文化，培养对民族文化的认同感和自豪感。
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="big-container">
-                <div class="left-box">
-                    <video id="video1" controls width="500" height="500">
-                        <source src="./video/16.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>商业价值</h3>
-                    <span>确山“打铁花”可以带动当地旅游业的发展，创造出商业价值</span>
+        </div>
+        <div class="performance-highlights" style="margin-top: 50px;">
+            <!-- 表演特色介绍 -->
+            <div class="performance-features"
+                style="background: rgba(234, 192, 87, 0.2); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                <h3 style="text-align: center; margin-bottom: 20px;">表演特色</h3>
+                <div style="display: flex; justify-content: space-between; text-align: center;">
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">技艺精湛</h4>
+                        <p style="color: #666;">传统技艺与现代表演<br>完美结合</p>
+                    </div>
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">视觉震撼</h4>
+                        <p style="color: #666;">璀璨铁花绽放<br>光影交织</p>
+                    </div>
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">艺术创新</h4>
+                        <p style="color: #666;">融入现代元素<br>焕发新活力</p>
+                    </div>
                 </div>
-                <div class="right-box">
-                    <video id="video2" controls width="500" height="500">
-                        <source src="./video/17.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>人文价值</h3>
-                    <span>丰富人们的业余文化生活,让默默不起眼的黑色铁块,
-                        绽放世界上最美丽的花</span>
+            </div>
+
+            <!-- 观众反馈 -->
+            <div class="audience-feedback" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"震撼的视觉体验，让人难忘的传统艺术表演！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众张先生</p>
+                </div>
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"传统与现代的完美融合，令人叹为观止！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众李女士</p>
+                </div>
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"孩子们看得入迷，这就是最好的文化传承！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众王女士</p>
+                </div>
+            </div>
+
+            <!-- 演出信息 -->
+            <div class="performance-info"
+                style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <h3 style="text-align: center; margin-bottom: 20px;">近期演出信息</h3>
+                <div style="display: flex; justify-content: space-around; text-align: center;">
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">春节庆典专场</h4>
+                        <p style="color: #666;">2024年2月10日</p>
+                        <p style="color: #666;">确山县文化广场</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">元宵节晚会</h4>
+                        <p style="color: #666;">2024年2月24日</p>
+                        <p style="color: #666;">县城中心广场</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">文化节展演</h4>
+                        <p style="color: #666;">2024年3月15日</p>
+                        <p style="color: #666;">市民文化中心</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="performance-highlights" style="margin-top: 50px;">
+            <!-- 表演特色介绍 -->
+            <div class="performance-features"
+                style="background: rgba(234, 192, 87, 0.2); padding: 30px; border-radius: 15px; margin-bottom: 30px;">
+                <h3 style="text-align: center; margin-bottom: 20px;">表演特色</h3>
+                <div style="display: flex; justify-content: space-between; text-align: center;">
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">技艺精湛</h4>
+                        <p style="color: #666;">传统技艺与现代表演<br>完美结合</p>
+                    </div>
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">视觉震撼</h4>
+                        <p style="color: #666;">璀璨铁花绽放<br>光影交织</p>
+                    </div>
+                    <div style="flex: 1; padding: 0 15px;">
+                        <h4 style="color: #333; margin-bottom: 10px;">艺术创新</h4>
+                        <p style="color: #666;">融入现代元素<br>焕发新活力</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 观众反馈 -->
+            <div class="audience-feedback" style="display: flex; justify-content: space-between; margin-bottom: 30px;">
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"震撼的视觉体验，让人难忘的传统艺术表演！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众张先生</p>
+                </div>
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"传统与现代的完美融合，令人叹为观止！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众李女士</p>
+                </div>
+                <div
+                    style="width: 30%; background: #fff; padding: 20px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #666; line-height: 1.6;">"孩子们看得入迷，这就是最好的文化传承！"</p>
+                    <p style="text-align: right; margin-top: 10px; color: #333;">- 观众王女士</p>
+                </div>
+            </div>
+
+            <!-- 演出信息 -->
+            <div class="performance-info"
+                style="background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <h3 style="text-align: center; margin-bottom: 20px;">近期演出信息</h3>
+                <div style="display: flex; justify-content: space-around; text-align: center;">
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">春节庆典专场</h4>
+                        <p style="color: #666;">2024年2月10日</p>
+                        <p style="color: #666;">确山县文化广场</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">元宵节晚会</h4>
+                        <p style="color: #666;">2024年2月24日</p>
+                        <p style="color: #666;">县城中心广场</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #333; margin-bottom: 10px;">文化节展演</h4>
+                        <p style="color: #666;">2024年3月15日</p>
+                        <p style="color: #666;">市民文化中心</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p >
+        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
         <ul>
             <li>联系我们</li>
             <li>隐私政策</li>
@@ -113,4 +244,6 @@
     </footer>
 </body>
 <script src="./js/价值意义.js"></script>
+<script src="./js/通用.js"></script>
+
 </html>

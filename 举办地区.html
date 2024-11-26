@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>举办地区</title>
     <link rel="stylesheet" href="./css/举办地区.css">
+    <link rel="stylesheet" href="./css/通用.css">
 </head>
+
 <body>
     <!-- 导航栏  -->
     <div class="title">
@@ -24,10 +27,22 @@
             </form>
         </div>
     </div>
-    
+
     <!-- 轮播图 -->
     <div class="banner">
-        <img src="./img/d8.jpg" alt="打铁花">
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&lt;</button>
+        </div>
+        <div class="slider">
+            <img src="./img/d1.jpg" alt="打铁花" class="active">
+            <img src="./img/d2.jpg" alt="打铁花">
+            <img src="./img/d3.jpg" alt="打铁花">
+            <img src="./img/d4.jpg" alt="打铁花">
+            <img src="./img/d5.jpg" alt="打铁花">
+        </div>
+        <div class="slider-controls">
+            <button onclick="nextSlide()">&gt;</button>
+        </div>
     </div>
     <!-- 版心 -->
     <div class="content">
@@ -59,10 +74,10 @@
                     </span>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="container-bo">
             <div class="container">
-                <img src="./img/d1.jpg" alt="">
+                <img src="./img/长城铁花.jpg" alt="">
                 <div class="hsa">
                     <h3>长城铁花</h3>
                     <span class="zb">长城铁花发源地是北京市延庆区石峡关段古长城,
@@ -75,7 +90,7 @@
         </div>
         <div class="container-bo">
             <div class="container">
-                <img src="./img/d1.jpg" alt="">
+                <img src="./img/作品2.jpg" alt="">
                 <div class="hsa">
                     <h3>宁夏铁花</h3>
                     <span class="zb">早先，宁夏各地都流行“打铁花”。
@@ -86,7 +101,7 @@
         </div>
         <div class="container-bo">
             <div class="container">
-                <img src="./img/d1.jpg" alt="">
+                <img src="./img/长治铁花.jpg" alt="">
                 <div class="hsa">
                     <h3>长治铁花</h3>
                     <span class="zb">长治境内群众把铁花叫作铁骊花，正是取“铁犁华”的谐音。
@@ -99,7 +114,7 @@
         </div>
         <div class="container-bo">
             <div class="container">
-                <img src="./img/d1.jpg" alt="">
+                <img src="./img/铁花演出.jpg" alt="">
                 <div class="hsa">
                     <h3>铁花演出</h3>
                     <span class="zb">2004年和2005年,“确山铁花”应邀到郑州市森林公园举办的中原文化庙会上表演,
@@ -111,7 +126,7 @@
         </div>
     </div>
     <footer>
-        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p >
+        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
         <ul>
             <li>联系我们</li>
             <li>隐私政策</li>
@@ -120,4 +135,5 @@
     </footer>
 </body>
 <script src="./js/举办地区.js"></script>
+<script src="./js/通用.js"></script>
 </html>

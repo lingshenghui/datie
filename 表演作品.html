@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>打铁花表演作品</title>
     <link rel="stylesheet" href="./css/习俗起源.css">
+    <link rel="stylesheet" href="./css/通用.css">
     <style>
         /* 整体布局样式调整，确保视频和文字能合理排列且对齐 */
         .workItem {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start; /* 顶部对齐，使文本和视频顶部对齐 */
+            align-items: flex-start;
+            /* 顶部对齐，使文本和视频顶部对齐 */
             margin-bottom: 20px;
         }
 
@@ -30,24 +32,39 @@
             background-color: rgb(234, 192, 87);
             padding: 30px;
             border: 1px solid #ccc;
-            border-radius: 50% / 30%; /* 修改此处为椭圆的圆角设置，可根据需要调整数值 */
+            border-radius: 50% / 30%;
+            /* 修改此处为椭圆的圆角设置，可根据需要调整数值 */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* 文本内容顶部对齐 */
+            justify-content: flex-start;
+            /* 文本内容顶部对齐 */
+        }
+
+        /* 新增的样式 */
+        .work-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .work-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 
 <body>
-<!-- 导航栏  -->
-<div class="title">
-    <a href="./index.html">首页</a>
-    <a href="./习俗起源.html">习俗起源</a>
-    <a href="./习俗形式.html">习俗形式</a>
-    <a href="./表演作品.html">表演作品</a>
-    <a href="./表演流程.html">表演流程</a>
-    <a href="./传承人物.html">传承人物">
-        <a href="./举办地区.html">举办地区"></a>
+    <!-- 导航栏  -->
+    <div class="title">
+        <a href="./index.html">首页</a>
+        <a href="./习俗起源.html">习俗起源</a>
+        <a href="./习俗形式.html">习俗形式</a>
+        <a href="./表演作品.html">表演作品</a>
+        <a href="./表演流程.html">表演流程</a>
+        <a href="./传承人物.html">传承人物</a>
+        <a href="./举办地区.html">举办地区</a>
         <a href="./价值意义.html">价值意义</a>
         <div class="search">
             <form action="" method="post">
@@ -55,65 +72,105 @@
                 <button type="submit"></button>
             </form>
         </div>
-</div>
+    </div>
 
-<!-- 轮播图 -->
-<div class="banner">
-    <img src="./img/d8.jpg" alt="打铁花">
-</div>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&lt;</button>
+        </div>
+        <div class="slider">
+            <img src="./img/d1.jpg" alt="打铁花" class="active">
+            <img src="./img/d2.jpg" alt="打铁花">
+            <img src="./img/d3.jpg" alt="打铁花">
+            <img src="./img/d4.jpg" alt="打铁花">
+            <img src="./img/d5.jpg" alt="打铁花">
+        </div>
+        <div class="slider-controls">
+            <button onclick="nextSlide()">&gt;</button>
+        </div>
+    </div>
 
-<!-- 版心 -->
-<div class="container">
-    <div id="performanceWorks">
-        <h2>精彩打铁花表演作品赏析</h2>
-        <div class="worksDescriptions">
-            <!-- 第一个作品项，视频在左，文字在右 -->
-            <div class="workItem">
-                <video id="video1" controls width="500" height="500">
-                    <source src="./video/18.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div>
-                    <p>《璀璨星河》</p>
-                    <span>这一表演作品以浩瀚星空为灵感，打铁花师傅们巧妙地运用铁水的抛洒和绽放，模拟出星河闪烁的效果。铁花在夜空中绽放，如同点点繁星坠落，配合着背景音乐的烘托，营造出一种梦幻般的氛围，让观众仿佛置身于浩瀚宇宙之中。</span>
+    <!-- 版心 -->
+    <div class="container">
+        <div id="performanceWorks">
+            <h2>精彩打铁花表演作品赏析</h2>
+            <div class="worksDescriptions">
+                <!-- 第一个作品项，视频在左，文字在右 -->
+                <div class="workItem">
+                    <video id="video1" controls width="500" height="500">
+                        <source src="./video/18.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div>
+                        <p class="work-title">《璀璨星河》</p>
+                        <span
+                            class="work-description">这一表演作品以浩瀚星空为灵感，打铁花师傅们巧妙地运用铁水的抛洒和绽放，模拟出星河闪烁的效果。铁花在夜空中绽放，如同点点繁星坠落，配合着背景音乐的烘托，营造出一种梦幻般的氛围，让观众仿佛置身于浩瀚宇宙之中。</span>
+                    </div>
+                </div>
+
+                <!-- 第二个作品项，文字在左，视频在右 -->
+                <div class="workItem">
+                    <div>
+                        <p class="work-title">《龙凤呈祥》</p>
+                        <span
+                            class="work-description">作品将打铁花与传统的龙、凤元素相结合。在表演过程中，先是由舞龙舞凤的队伍穿梭其中，随后打铁花师傅们在龙、凤周围打出绚丽的铁花，象征着龙凤在祥云中腾飞，寓意着吉祥如意、繁荣昌盛，展现出了浓郁的中国传统文化韵味。</span>
+                    </div>
+                    <video id="video1" controls width="500" height="500">
+                        <source src="./video/19.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- 第三个作品项，视频在左，文字在右 -->
+                <div class="workItem">
+                    <video id="video1" controls width="500" height="500">
+                        <source src="./video/20.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div>
+                        <p class="work-title">《火树银花不夜天》</p>
+                        <span
+                            class="work-description">此作品着重展现打铁花的绚烂与辉煌。师傅们将大量的铁水抛向高空，形成一片片如银树般的铁花，照亮了整个夜空，真可谓是“火树银花不夜天”的生动写照。现场观众无不被这壮观的景象所震撼，感受到了打铁光这一古老技艺的独特魅力。</span>
+                    </div>
                 </div>
             </div>
-
-            <!-- 第二个作品项，文字在左，视频在右 -->
-            <div class="workItem">
-                <div>
-                    <p>《龙凤呈祥》</p>
-                    <span>作品将打铁花与传统的龙、凤元素相结合。在表演过程中，先是由舞龙舞凤的队伍穿梭其中，随后打铁花师傅们在龙、凤周围打出绚丽的铁花，象征着龙凤在祥云中腾飞，寓意着吉祥如意、繁荣昌盛，展现出了浓郁的中国传统文化韵味。</span>
+        </div>
+        <!-- 在 worksDescriptions 后添加 -->
+        <div class="more-works" style="margin-top: 40px;">
+            <h3 style="text-align: center; margin-bottom: 20px;">更多精彩作品</h3>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div class="work-preview" style="width: 23%; text-align: center;">
+                    <img src="./img/作品1.jpg" alt="作品预览" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    <p style="margin-top: 10px; font-size: 16px;">新春庆典专场</p>
                 </div>
-                <video id="video1" controls width="500" height="500">
-                    <source src="./video/19.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>            </div>
-
-            <!-- 第三个作品项，视频在左，文字在右 -->
-            <div class="workItem">
-                <video id="video1" controls width="500" height="500">
-                    <source src="./video/20.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>                <div>
-                    <p>《火树银花不夜天》</p>
-                    <span>此作品着重展现打铁花的绚烂与辉煌。师傅们将大量的铁水抛向高空，形成一片片如银树般的铁花，照亮了整个夜空，真可谓是“火树银花不夜天”的生动写照。现场观众无不被这壮观的景象所震撼，感受到了打铁光这一古老技艺的独特魅力。</span>
+                <div class="work-preview" style="width: 23%; text-align: center;">
+                    <img src="./img/作品2.jpg" alt="作品预览" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    <p style="margin-top: 10px; font-size: 16px;">元宵节表演</p>
+                </div>
+                <div class="work-preview" style="width: 23%; text-align: center;">
+                    <img src="./img/作品3.jpg" alt="作品预览" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    <p style="margin-top: 10px; font-size: 16px;">文化节展演</p>
+                </div>
+                <div class="work-preview" style="width: 23%; text-align: center;">
+                    <img src="./img/作品4.jpg" alt="作品预览" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                    <p style="margin-top: 10px; font-size: 16px;">民俗展示会</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
-    <ul>
-        <li>联系我们</li>
-        <li>隐私政策</li>
-        <li>使用条款</li>
-    </ul>
-</footer>
+    <footer>
+        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
+        <ul>
+            <li>联系我们</li>
+            <li>隐私政策</li>
+            <li>使用条款</li>
+        </ul>
+    </footer>
 </body>
 
 <script src="./js/习俗形式.js"></script>
+<script src="./js/通用.js"></script>
 
 </html>

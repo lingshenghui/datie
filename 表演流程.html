@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/表演流程.css">
+    <link rel="stylesheet" href="./css/通用.css">
 </head>
+
 <body>
     <!-- 导航栏  -->
     <div class="title">
@@ -24,27 +27,40 @@
             </form>
         </div>
     </div>
-        <!-- 版心 -->
+    <!-- 版心 -->
     <div class="container">
+        <!-- 轮播图 -->
         <div class="banner">
-            <img src="./img/d8.jpg" alt="打铁花">
+            <div class="slider-controls">
+                <button onclick="prevSlide()">&lt;</button>
+            </div>
+            <div class="slider">
+                <img src="./img/d1.jpg" alt="打铁花" class="active">
+                <img src="./img/d2.jpg" alt="打铁花">
+                <img src="./img/d3.jpg" alt="打铁花">
+                <img src="./img/d4.jpg" alt="打铁花">
+                <img src="./img/d5.jpg" alt="打铁花">
+            </div>
+            <div class="slider-controls">
+                <button onclick="nextSlide()">&gt;</button>
+            </div>
         </div>
         <div id="xs">
             <h2>打铁花的表演流程</h2>
         </div>
         <div class="zhi">
-                <div class="za">
-                    <img src="./img/z1.jpg" alt="">
-                </div>
-                <div class="zb">
-                    <img src="./img/z2.jpg" alt="">
-                </div>
-                <div class="zc">
-                    <img src="./img/z3.jpg" alt="">
-                </div>
-                <div class="zd">
-                    <img src="./img/z4.jpg" alt="">
-            </div>        
+            <div class="za">
+                <img src="./img/z1.jpg" alt="">
+            </div>
+            <div class="zb">
+                <img src="./img/z2.jpg" alt="">
+            </div>
+            <div class="zc">
+                <img src="./img/z3.jpg" alt="">
+            </div>
+            <div class="zd">
+                <img src="./img/z4.jpg" alt="">
+            </div>
         </div>
         <div class="h">
             <p class="ha">
@@ -80,15 +96,16 @@
             </p>
         </div>
     </div>
-        <!-- 底部  -->
-        <footer>
-            <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p >
-            <ul>
-                <li>联系我们</li>
-                <li>隐私政策</li>
-                <li>使用条款</li>
-            </ul>
-        </footer>
+    <!-- 底部  -->
+    <footer>
+        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
+        <ul>
+            <li>联系我们</li>
+            <li>隐私政策</li>
+            <li>使用条款</li>
+        </ul>
+    </footer>
 </body>
 <script src="./js/表演流程.js"></script>
+<script src="./js/通用.js"></script>
 </html>

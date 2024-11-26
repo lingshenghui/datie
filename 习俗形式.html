@@ -6,82 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>打铁花习俗形式</title>
     <link rel="stylesheet" href="./css/习俗起源.css">
+    <link rel="stylesheet" href="./css/通用.css">
 </head>
 
+
+
 <body>
-<!-- 导航栏  -->
-<div class="title">
-    <a href="./index.html">首页</a>
-    <a href="./习俗起源.html">习俗起源</a>
-    <a href="./习俗形式.html">习俗形式</a>
-    <a href="./表演作品.html">表演作品</a>
-    <a href="./表演流程.html">表演流程</a>
-    <a href="./传承人物.html">传承人物</a>
-    <a href="./举办地区.html">举办地区</a>
-    <a href="./价值意义.html">价值意义</a>
-    <div class="search">
-        <form action="" method="post">
-            <input type="text" name="keyword" placeholder="请输入"/>
-            <button type="submit"></button>
-        </form>
+    <!-- 导航栏  -->
+    <div class="title">
+        <a href="./index.html">首页</a>
+        <a href="./习俗起源.html">习俗起源</a>
+        <a href="./习俗形式.html">习俗形式</a>
+        <a href="./表演作品.html">表演作品</a>
+        <a href="./表演流程.html">表演流程</a>
+        <a href="./传承人物.html">传承人物</a>
+        <a href="./举办地区.html">举办地区</a>
+        <a href="./价值意义.html">价值意义</a>
+        <div class="search">
+            <form action="" method="post">
+                <input type="text" name="keyword" placeholder="请输入" />
+                <button type="submit"></button>
+            </form>
+        </div>
     </div>
-</div>
 
-<!-- 轮播图 -->
-<div class="banner">
-    <img src="./img/d8.jpg" alt="打铁花">
-</div>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&lt;</button>
+        </div>
+        <div class="slider">
+            <img src="./img/d1.jpg" alt="打铁花" class="active">
+            <img src="./img/d2.jpg" alt="打铁花">
+            <img src="./img/d3.jpg" alt="打铁花">
+            <img src="./img/d4.jpg" alt="打铁花">
+            <img src="./img/d5.jpg" alt="打铁花">
+        </div>
+        <div class="slider-controls">
+            <button onclick="nextSlide()">&gt;</button>
+        </div>
+    </div>
 
-<!-- 版心 -->
-<div class="container">
-    <div id="customForms">
-        <h2>打铁花常见习俗形式</h2>
-        <div class="formDescriptions">
-            <!-- 第一行：左边文字右边图片 -->
-            <div class="formItem"
-                 style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <div style="width: 50%; text-align: left; line-height: 1.5;">
-                    <p style="font-size: 20px; font-weight: bold;">节日庆典形式</p>
-                    <span style="padding: 0 20px;">在重大节日如春节、元宵节等，打铁花作为重要的庆祝活动之一，为节日增添热闹喜庆的的氛围。届时，人们会聚集在广场或开阔场地，观赏打铁花表演，感受其绚烂多彩的视觉冲击，共同庆祝节日的到来。</span>
+    <!-- 版心 -->
+    <div class="container">
+        <div id="customForms">
+            <h2>打铁花常见习俗形式</h2>
+            <div class="formDescriptions">
+                <!-- 第一行：左边文字右边图片 -->
+                <div class="formItem" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div style="width: 50%; text-align: left; line-height: 1.5;">
+                        <p style="font-size: 20px; font-weight: bold;">节日庆典形式</p>
+                        <span style="padding: 0 20px;">在重大节日如春节、元宵节期间，打铁花表演是最受欢迎的传统节目之一。表演者头戴葫芦瓢，赤裸上身，手持花棒，在夜空中挥洒出璀璨的铁花。铁水飞溅时形成的金色火树，配合着此起彼伏的鞭炮声，营造出浓厚的节日氛围。特别是在元宵节晚上，打铁花表演更是将节日气氛推向高潮，吸引着成千上万的观众驻足观看。</span>
+                    </div>
+                    <img src="./img/打铁花1.jpg" alt="节日庆典形式" style="width: 400px; height: 250px; border-radius: 10px;">
                 </div>
-                <img src="./img/打铁花1.jpg" alt="节日庆典形式"
-                     style="width: 400px; height: 250px; border-radius: 10px;">
-            </div>
 
-            <!-- 第二行：左边图片右边文字 -->
-            <div class="formItem" style="display: flex; justify-content: space-between; align-items: center;">
-                <img src="./img/打铁花2.jpg" alt="庙会活动形式"
-                     style="width: 400px; height: 250px; border-radius: 10px;">
-                <div style="width: 50%; text-align: left; line-height: 1.5;">
-                    <p style="font-size: 20px; font-weight: bold;">庙会活动形式</p>
-                    <span style="padding: 0 20px;">庙会期间，打铁花表演常常是吸引众多游客和香客的亮点项目。它与庙会的其他传统活动如民俗表演、小吃展销等相结合，形成丰富多彩的庙会场景。打铁花在夜晚绽放，照亮整个庙会场地，营造出神秘而热闹的氛围。</span>
+                <!-- 第二行：左边图片右边文字 -->
+                <div class="formItem" style="display: flex; justify-content: space-between; align-items: center;">
+                    <img src="./img/打铁花2.jpg" alt="庙会活动形式" style="width: 400px; height: 250px; border-radius: 10px;">
+                    <div style="width: 50%; text-align: left; line-height: 1.5;">
+                        <p style="font-size: 20px; font-weight: bold;">庙会活动形式</p>
+                        <span style="padding: 0 20px;">庙会期间的打铁花表演别具特色。表演通常在傍晚开始，当天色渐暗时，打铁花师傅们便开始准备工作。他们在庙会场地中央搭建特制的花棚，顶上铺满新鲜的柳树枝，绑上各式烟花和鞭炮。随着夜幕降临，铁水飞溅，火树银花，与庙会的其他传统活动如民俗表演、小吃展销等相结合，形成了独具特色的文化景观。</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 第三行：左边文字右边图片 -->
-            <div class="formItem"
-                 style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
-                <div style="width: 50%; text-align: left; line-height: 1.5;">
-                    <p style="font-size: 20px; font-weight: bold;">民俗传承活动形式</p>
-                    <span style="padding: 0 20px;">为了传承和弘扬打铁花这一古老民俗技艺，会专门举办民俗传承活动。在这些活动中，不仅有精彩的打铁花表演，还会设置技艺展示环节，让观众近距离了解打铁花的制作过程和背后的文化内涵，鼓励年轻人参与到民俗传承中来。</span>
+                <!-- 第三行：左边文字右边图片 -->
+                <div class="formItem" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                    <div style="width: 50%; text-align: left; line-height: 1.5;">
+                        <p style="font-size: 20px; font-weight: bold;">民俗传承活动形式</p>
+                        <span style="padding: 0 20px;">为了传承和弘扬这门古老技艺，当地经常举办专门的民俗传承活动。活动中不仅有精彩的打铁花表演，还会设置技艺展示和互动体验环节。老艺人们会现场讲解打铁花的历史渊源、制作工艺和表演技巧，让观众近距离了解这门传统技艺。同时，还会组织年轻人参与学习，通过"师带徒"的方式，确保这项非物质文化遗产能够代代相传。</span>
+                    </div>
+                    <img src="./img/打铁花3.jpg" alt="民俗传承活动形式" style="width: 400px; height: 250px; border-radius: 10px;">
                 </div>
-                <img src="./img/打铁花3.jpg" alt="民俗传承活动形式"
-                     style="width: 400px; height: 250px; border-radius: 10px;">
+
+                <!-- 第四行：左边图片右边文字 -->
+                <div class="formItem" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                    <img src="./img/打铁花4.jpg" alt="现代创新表演形式" style="width: 400px; height: 250px; border-radius: 10px;">
+                    <div style="width: 50%; text-align: left; line-height: 1.5;">
+                        <p style="font-size: 20px; font-weight: bold;">现代创新表演形式</p>
+                        <span style="padding: 0 20px;">随着时代发展，打铁花表演也在不断创新。现代表演中融入了音乐、灯光等现代元素，有的还结合了舞龙舞狮等传统表演，创造出更加震撼的视觉效果。表演者们根据不同的主题和场合，设计出各具特色的表演节目，既保留了传统技艺的精髓，又赋予了新的艺术表现形式。</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
-    <ul>
-        <li>联系我们</li>
-        <li>隐私政策</li>
-        <li>使用条款</li>
-    </ul>
-</footer>
+    <footer>
+        <p>版权所有 &copy; 2024 湖南财经工业职业技术学院22计应6班陈晓敏</p>
+        <ul>
+            <li>联系我们</li>
+            <li>隐私政策</li>
+            <li>使用条款</li>
+        </ul>
+    </footer>
 </body>
 
 <script src="./js/习俗形式.js"></script>
+<script src="./js/通用.js"></script>
+
+</html>
+        </ul>
+    </footer>
+</body>
+
+<script src="./js/习俗形式.js"></script>
+<script src="./js/通用.js"></script>
 
 </html>
