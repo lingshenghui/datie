@@ -46,82 +46,141 @@
     </div>
     <!-- 版心 -->
     <div class="content">
-        <div class="zw">
-            <h2>举办地区</h2>
-            <div class="hy"></div>
-            <div class="hs">
-                <span class="za">
-                    古时候不仅大作坊、大字号的工匠组织举行“确山铁花”活动，
-                    村镇集市中的小炉匠、小铁匠铺，也会举办小型的“打铁花”活动。
-                    他们一般不搭花棚，也不举行祭祀活动，只是选择一棵不太高的柳树或枣树，
-                    把鞭炮、起火绑在树上，把群众自愿捐送的废铁化成铁汁，用木板或木锨往树上打
-                </span>
-            </div>
-        </div>
-        <div class="container-bo">
-            <div class="container">
-                <img src="./img/d1.jpg" alt="">
-                <div class="hsa">
-                    <h3>晋城铁花</h3>
-                    <span class="zb">元宵节期间，晋东南长治晋城一带有“打铁花”的习俗。
-                        还有的民众在腊月期间，将大量的生灰铁碾成粉末，制成大量地塌，准备元宵节使用。
-                        到元宵节晚上，把准备好的铁粉放在大广场中，生起一盘盘炉火，就可以开始打铁花了。
-                        它与图腾崇拜、原始歌舞有着很深的联系，经过驱傩仪式由宫廷传入民间，演变成乡村祭祀、娱神、迎神的赛会。
-                    </span>
-                    <span class="zc">
-                        晋城市打铁花技艺是对传统非遗文化的继承和创新，
-                        把传统打铁花设备改进后，表演时配上音乐、灯光和原生态表演，给人一种很强的视觉冲击，场面震撼。
-                    </span>
+        <!-- 地区分布概览 -->
+        <div class="region-overview">
+            <h2>打铁花艺术分布地区</h2>
+            <div class="map-container">
+                <div id="distribution-map" class="map" ></div>
+                <div class="map-info">
+                    <h3>主要分布区域</h3>
+                    <ul class="region-list">
+                        <li data-region="hunan" class="active">湖南省</li>
+                        <li data-region="hubei">湖北省</li>
+                        <li data-region="jiangxi">江西省</li>
+                        <li data-region="sichuan">四川省</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="container-bo">
-            <div class="container">
-                <img src="./img/长城铁花.jpg" alt="">
-                <div class="hsa">
-                    <h3>长城铁花</h3>
-                    <span class="zb">长城铁花发源地是北京市延庆区石峡关段古长城,
-                        是当年李闯王进京破关的地方,是烽火狼烟岁月兵戈之争中文化交融碰撞的产物。
-                        长城铁花演出2016年以来一年四季做到了常态化演出,并研发了一些旧有传统打法无法想象的铁花设计,
-                        如“长城铁花之佛光普照、冰火两重天（冬奥）、普天同庆”等难度更大更震撼打法。
-                    </span>
+
+        <!-- 重点地区详情 -->
+        <div class="region-details">
+            <!-- 湖南省卡片 -->
+            <div class="region-card active" id="hunan-detail">
+                <h3>湖南省重点地区</h3>
+                <div class="region-content">
+                    <div class="region-image">
+                        <img src="./img/hunan.jpg" alt="湖南打铁花">
+                    </div>
+                    <div class="region-text">
+                        <h4>长沙市</h4>
+                        <p>作为湖南省会，长沙市的打铁花艺术具有悠久历史，每年农历正月十五元宵节期间在太平街、坡子街等地都有盛大的表演活动。</p>
+                        <div class="event-info">
+                            <span class="time">表演时间：农历正月初一至正月十五</span>
+                            <span class="location">主要地点：太平街、坡子街、黄兴路步行街</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 湖北省卡片 -->
+            <div class="region-card" id="hubei-detail">
+                <h3>湖北省重点地区</h3>
+                <div class="region-content">
+                    <div class="region-image">
+                        <img src="./img/hubei.jpg" alt="湖北打铁花">
+                    </div>
+                    <div class="region-text">
+                        <h4>武汉市</h4>
+                        <p>武汉的打铁花艺术主要集中在汉口地区，每年春节期间都会举办大型打铁花表演活动，吸引众多游客观赏。</p>
+                        <div class="event-info">
+                            <span class="time">表演时间：春节期间</span>
+                            <span class="location">主要地点：汉口江滩、户部巷</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 江西省卡片 -->
+            <div class="region-card" id="jiangxi-detail">
+                <h3>江西省重点地区</h3>
+                <div class="region-content">
+                    <div class="region-image">
+                        <img src="./img/jiangxi.jpg" alt="江西打铁花">
+                    </div>
+                    <div class="region-text">
+                        <h4>南昌市</h4>
+                        <p>江西南昌的打铁花艺术具有独特的地方特色，在传统节日期间常有表演活动，深受当地群众喜爱。</p>
+                        <div class="event-info">
+                            <span class="time">表演时间：元宵节前后</span>
+                            <span class="location">主要地点：滕王阁景区、八一广场</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 四川省卡片 -->
+            <div class="region-card" id="sichuan-detail">
+                <h3>四川省重点地区</h3>
+                <div class="region-content">
+                    <div class="region-image">
+                        <img src="./img/sichuan.jpg" alt="四川打铁花">
+                    </div>
+                    <div class="region-text">
+                        <h4>成都市</h4>
+                        <p>成都的打铁花艺术融合了川西特色，在春节和重大节日期间都会举办表演，是当地非物质文化遗产的重要组成部分。</p>
+                        <div class="event-info">
+                            <span class="time">表演时间：春节、中秋节期间</span>
+                            <span class="location">主要地点：宽窄巷子、锦里古街</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-bo">
-            <div class="container">
-                <img src="./img/作品2.jpg" alt="">
-                <div class="hsa">
-                    <h3>宁夏铁花</h3>
-                    <span class="zb">早先，宁夏各地都流行“打铁花”。
-                        打铁花的位置，一般会设在舞龙的大场子里，与舞龙的活动相结合。后随着农业机械化的发展，该活动渐渐没落。
-                    </span>
+
+        <!-- 地区活动日历 -->
+        <div class="event-calendar">
+            <h3>演出日程安排</h3>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="prev-month">&lt;</button>
+                    <h4 id="current-month">2024年3月</h4>
+                    <button class="next-month">&gt;</button>
+                </div>
+                <div class="calendar-body" id="calendar-days">
+                    <!-- 日历内容由JavaScript动态生成 -->
                 </div>
             </div>
         </div>
-        <div class="container-bo">
-            <div class="container">
-                <img src="./img/长治铁花.jpg" alt="">
-                <div class="hsa">
-                    <h3>长治铁花</h3>
-                    <span class="zb">长治境内群众把铁花叫作铁骊花，正是取“铁犁华”的谐音。
-                        熔化铸铁有一定限度，以稀而不散，稠而不沾为好。打一场铁花要耗费很多铸铁，
-                        少则数十斤，多则上百斤。玩者人数不限，或十数人或数十人，一般都是生龙活虎的年轻人。
-                        解放后，随着烟火的普及和发展，打铁花的活动日益减少。进入七十年代，基本消亡。
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="container-bo">
-            <div class="container">
-                <img src="./img/铁花演出.jpg" alt="">
-                <div class="hsa">
-                    <h3>铁花演出</h3>
-                    <span class="zb">2004年和2005年,“确山铁花”应邀到郑州市森林公园举办的中原文化庙会上表演,
-                        被授予民间艺术表演金奖和特别金奖。2008年春节,应中国民间文化遗产展演展示活动组委会邀请,
-                        在北京中央电视台北普陀影视基地连续演出10余场,被评为该活动金奖第一名,誉为“中华第一铁花”。
-                    </span>
-                </div>
+
+        <!-- 互动体验区 -->
+        <div class="interactive-section">
+            <h3>打铁花体验预约</h3>
+            <div class="booking-form">
+                <form id="experience-form">
+                    <div class="form-group">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话：</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">预约日期：</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">体验地点：</label>
+                        <select id="location" required>
+                            <option value="">请选择体验地点</option>
+                            <option value="taipping">太平街体验中心</option>
+                            <option value="pozi">坡子街文化馆</option>
+                            <option value="huangxing">黄兴路非遗馆</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">提交预约</button>
+                </form>
             </div>
         </div>
     </div>
